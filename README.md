@@ -1,12 +1,30 @@
-<h1>Circular Queue (cqueue)</h1>
+<h1>Unit Testing Circular Queue (cqueue) with Google Test>
 
-<h2>Unit Testing</h2>
+<h2>Setup</h2>
 The <a href="https://github.com/google/googletest">Google Test</a> framework is being used to test cqueue. I built and ran the project in Visual Studio Code. The toolchain was set to 
 
 <br>
 
 ```
 GCC 11.2.0 x86_64-w64-mingw32
+```
+
+<br>
+
+This can be obtained by installing chocolatey and mingw. You will also need to install cmake (which includes ctest). Be sure to add `<your cmake install dir>\CMake\bin` to the PATH variable.
+
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+choco install mingw
+choco install cmake --pre
+```
+
+<br>
+To clone this repo and bring in googletest as a sbmodule (required), use
+
+```
+git clone --recurse-submodules https://github.com/markCwatson/CircularQueue_with_GoogleTest.git
 ```
 
 <br>

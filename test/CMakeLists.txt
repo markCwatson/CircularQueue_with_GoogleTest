@@ -10,7 +10,7 @@ add_executable(${This} ${Sources})
 
 target_link_libraries(${This} PUBLIC 
     gtest_main
-    CircularQueue_GTest
+    CircularQueue_with_GoogleTest
 )
 
 add_test(
