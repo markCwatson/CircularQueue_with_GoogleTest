@@ -1,17 +1,18 @@
 <h1>Unit Testing Circular Queue (cqueue) with Google Test</h1>
 
 <h2>Setup</h2>
-The <a href="https://github.com/google/googletest">Google Test</a> framework is being used to test cqueue. I built and ran the project in Visual Studio Code. The toolchain was set to 
+The <a href="https://github.com/google/googletest">Google Test</a> framework is being used to test cqueue. I built and ran the project in Visual Studio Code. Builds/links successfully using the following toolchains:
 
 <br>
 
 ```
 GCC 11.2.0 x86_64-w64-mingw32
+GCC 12.2.0 x86_64-w64-mingw32
 ```
 
 <br>
 
-This can be obtained by installing chocolatey and mingw. You will also need to install cmake (which includes ctest). Be sure to add `<your cmake install dir>\CMake\bin` to the PATH variable.
+Install chocolatey (a package manager for Windows) and mingw (a compiler toolchain). You will also need to install cmake (a build system manager) which includes ctest (a framework for uniesting supported by cmake). Be sure to add `<your cmake install dir>\CMake\bin` to the PATH variable.
 
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
@@ -30,7 +31,7 @@ git clone --recurse-submodules https://github.com/markCwatson/CircularQueue_with
 <br>
 
 <h2>Example</h2>
-This is a simple example of initializing a using a circular queue per this cqueue interface. The example includes adding of elements, printing contents, etc.
+This is a simple example of initializing and using a circular queue per this cqueue interface. The example includes adding of elements, printing contents, etc.
 
 <br>
 
