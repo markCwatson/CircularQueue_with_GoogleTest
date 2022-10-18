@@ -5,7 +5,7 @@ extern "C" {
 }
 
 class cqueue_test : public ::testing::Test {
-public:
+protected:
     int test_data[6] = {1, 2, 3, 4, 5, 6};
     int peek;
     int dequeue;
@@ -30,6 +30,13 @@ public:
 TEST_F(cqueue_test, insert_one_element_and_check_size) {
     cqueue_enque(&myCqueue, &test_data[0]);
     EXPECT_EQ(1, cqueue_get_size(&myCqueue));
+}
+
+TEST_F(cqueue_test, reset) {
+    cqueue_enque(&myCqueue, &test_data[0]);
+    cqueue_reset(&myCqueue);
+    EXPECT_EQ(0, cqueue_get_size(&myCqueue));
+    EXPECT_EQ(1, cqueue_is_empty(&myCqueue));
 }
 
 TEST_F(cqueue_test, insert_one_element_and_peek) {
