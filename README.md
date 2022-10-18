@@ -1,4 +1,4 @@
-<h1>Unit Testing Circular Queue (cqueue) with Google Test>
+<h1>Unit Testing Circular Queue (cqueue) with Google Test</h1>
 
 <h2>Setup</h2>
 The <a href="https://github.com/google/googletest">Google Test</a> framework is being used to test cqueue. I built and ran the project in Visual Studio Code. The toolchain was set to 
