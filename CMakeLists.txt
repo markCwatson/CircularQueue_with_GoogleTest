@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.23)
 
-set(This CircularQueue_GTest)
+set(This CircularQueue_with_GoogleTest)
 
 project(${This} C CXX)
 
