@@ -12,7 +12,7 @@ GCC 12.2.0 x86_64-w64-mingw32
 
 <br>
 
-Install chocolatey (a package manager for Windows) and mingw (a compiler toolchain). You will also need to install cmake (a build system manager) which includes ctest (a framework for uniesting supported by cmake). Be sure to add `<your cmake install dir>\CMake\bin` to the PATH variable.
+Install chocolatey (a package manager for Windows) and mingw (a compiler toolchain). You will also need to install cmake (a build system manager) which includes ctest (a framework for unit testing supported by cmake). Be sure to add `<your cmake install dir>\CMake\bin` to the PATH variable.
 
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
