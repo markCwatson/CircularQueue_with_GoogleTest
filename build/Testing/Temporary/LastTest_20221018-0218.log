@@ -1,0 +1,45 @@
+Start testing: Oct 17 23:18 Atlantic Daylight Time
+----------------------------------------------------------
+1/1 Testing: cqueue_test
+1/1 Test: cqueue_test
+Command: "C:/Users/marku/OneDrive/Documents/Programming/GitRepos/CircularQueue_with_GoogleTest/build/test/cqueue_test.exe"
+Directory: C:/Users/marku/OneDrive/Documents/Programming/GitRepos/CircularQueue_with_GoogleTest/build/test
+"cqueue_test" start time: Oct 17 23:18 Atlantic Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:/Users/marku/OneDrive/Documents/Programming/GitRepos/CircularQueue_with_GoogleTest/googletest/googletest/src/gtest_main.cc
+[==========] Running 9 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 9 tests from cqueue_test
+[ RUN      ] cqueue_test.insert_one_element_and_check_size
+[       OK ] cqueue_test.insert_one_element_and_check_size (0 ms)
+[ RUN      ] cqueue_test.insert_one_element_and_peek
+[       OK ] cqueue_test.insert_one_element_and_peek (0 ms)
+[ RUN      ] cqueue_test.insert_two_elements_and_peek
+[       OK ] cqueue_test.insert_two_elements_and_peek (0 ms)
+[ RUN      ] cqueue_test.insert_two_elements_and_check_size
+[       OK ] cqueue_test.insert_two_elements_and_check_size (0 ms)
+[ RUN      ] cqueue_test.overfill_and_check_size
+[       OK ] cqueue_test.overfill_and_check_size (0 ms)
+[ RUN      ] cqueue_test.overfill_and_peek
+[       OK ] cqueue_test.overfill_and_peek (0 ms)
+[ RUN      ] cqueue_test.overfill_and_dequeue
+[       OK ] cqueue_test.overfill_and_dequeue (0 ms)
+[ RUN      ] cqueue_test.insert_after_fill_then_empty
+[       OK ] cqueue_test.insert_after_fill_then_empty (0 ms)
+[ RUN      ] cqueue_test.overfill_many_times
+[       OK ] cqueue_test.overfill_many_times (0 ms)
+[----------] 9 tests from cqueue_test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 9 tests.
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"cqueue_test" end time: Oct 17 23:18 Atlantic Daylight Time
+"cqueue_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 17 23:18 Atlantic Daylight Time
